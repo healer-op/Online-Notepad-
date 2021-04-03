@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   save.addEventListener("click", function(event) {
     event.preventDefault();
-    var blob = new Blob([content.value || content.placeholder],{type: "text/plain;charset=utf-8"});
+    var blob = new Blob([content.value + "\n\n----------------------------------------------------\n𝗡𝗼𝘄 𝗠𝗮𝗸𝗲 𝗬𝗼𝘂𝗿 𝗡𝗼𝘁𝗲𝘀 𝗢𝗻𝗹𝗶𝗻𝗲 : \nhttps://notepad.minevote.xyz\n𝗔𝗣𝗜 𝗕𝗬 𝗛𝗘𝗔𝗟𝗘𝗥\n----------------------------------------------------" || content.placeholder],{type: "text/plain;charset=utf-8"});
 
     if(title.value == "") {
       
